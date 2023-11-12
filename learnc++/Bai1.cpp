@@ -7,15 +7,15 @@ int main()
 {
     // freopen("Bai1.inp", "r", stdin);
     // freopen("Bai1.out", "w", stdout);
-    string st;
-    cin >> st;
+    string s;
+    cin >> s;
 
-    int n = st.length() - 1;
+    int n = s.length() - 1;
     for(int i = 0; i < n; i++)
         for(int j = i + 1; j <= n; j++)
-            if(st[i] < st[j])
-                swap(st[i], st[j]);
+            if(s[i] < s[j])
+                swap(s[i], s[j]);
             
 
-    cout << st;
+    cout << s;
 }
